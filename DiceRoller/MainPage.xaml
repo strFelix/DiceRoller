@@ -12,12 +12,24 @@
             <Label Text="ROLADOR DE DADOS" FontSize="30" HorizontalOptions="Center" />
             <Label x:Name="numberOutput" Text="0" FontSize="30" HorizontalOptions="Center" />
             
+
+            <Picker x:Name="picker" HorizontalOptions="Center"
+            Title="Quantidade de la">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>4</x:String>
+                        <x:String>6</x:String>
+                        <x:String>10</x:String>
+                        <x:String>20</x:String>
+                        <x:String>100</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
             <Button Text="ROLAR O DADO"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
                 Clicked="OnButtonClicked" />
-
-
         </VerticalStackLayout>
     </ScrollView>
 
