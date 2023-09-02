@@ -10,11 +10,9 @@ public partial class MainPage : ContentPage
 	private void OnButtonClicked(object sender, EventArgs e)
 	{
 		int min = 1;
-        //int max = 101;
-
         var numeroSelecionado = picker.SelectedItem;
-		string numeroTxt = numeroSelecionado.ToString();
-		int max = int.Parse(numeroTxt) + 1;
+        //int max = 101;
+		int max = int.Parse(numeroSelecionado.ToString()) + 1;
 		
 		Random random = new Random();
 
