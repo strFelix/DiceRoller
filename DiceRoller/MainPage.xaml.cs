@@ -7,10 +7,10 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
-	private void OnButtonClicked(object sender, EventArgs e)
+	private void SortearNumero(object sender, EventArgs e)
 	{
 		//eleciona valor picker
-		var maxValue = picker.SelectedItem;
+		var maxValue = seletorQuantidadeLados.SelectedItem;
 		//instancia do objeto gerando um numero com minimo e maximo (+1)
 		var numeroSorteado = new Random().Next(1, (int)maxValue + 1);
 

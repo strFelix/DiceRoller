@@ -13,7 +13,7 @@
             <Label x:Name="numberOutput" Text="0" FontSize="80" HorizontalOptions="Center" />
 
 
-            <Picker x:Name="picker" HorizontalOptions="Center"
+            <Picker x:Name="seletorQuantidadeLados" HorizontalOptions="Center"
             Title="Quantidade de lados:" FontSize="16">
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:Int32}">
@@ -28,7 +28,7 @@
             <Button Text="ROLAR O DADO" BackgroundColor="#4c4c4c" Margin="30"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
-                Clicked="OnButtonClicked" />
+                Clicked="SortearNumero" />
         </VerticalStackLayout>
     </ScrollView>
 
