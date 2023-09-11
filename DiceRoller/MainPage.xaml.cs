@@ -9,15 +9,13 @@ public partial class MainPage : ContentPage
 
 	private void OnButtonClicked(object sender, EventArgs e)
 	{
-		int min = 1;
-        var numeroSelecionado = picker.SelectedItem;
-        //int max = 101;
-		int max = int.Parse(numeroSelecionado.ToString()) + 1;
-		
-		Random random = new Random();
+		//eleciona valor picker
+		var maxValue = picker.SelectedItem;
+		//instancia do objeto gerando um numero com minimo e maximo (+1)
+		var numeroSorteado = new Random().Next(1, (int)maxValue + 1);
 
-		int numeroGerado = random.Next(min, max);
-		numberOutput.Text = numeroGerado.ToString();
+		//Mostrando o numero na tela"
+		numberOutput.Text= numeroSorteado.ToString();
     }
 }
 

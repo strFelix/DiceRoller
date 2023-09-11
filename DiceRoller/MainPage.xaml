@@ -16,16 +16,15 @@
             <Picker x:Name="picker" HorizontalOptions="Center"
             Title="Quantidade de lados:" FontSize="16">
                 <Picker.ItemsSource>
-                    <x:Array Type="{x:Type x:String}">
-                        <x:String>4</x:String>
-                        <x:String>6</x:String>
-                        <x:String>10</x:String>
-                        <x:String>20</x:String>
-                        <x:String>100</x:String>
+                    <x:Array Type="{x:Type x:Int32}">
+                        <x:Int32>4</x:Int32>
+                        <x:Int32>6</x:Int32>
+                        <x:Int32>10</x:Int32>
+                        <x:Int32>20</x:Int32>
+                        <x:Int32>100</x:Int32>
                     </x:Array>
                 </Picker.ItemsSource>
             </Picker>
-
             <Button Text="ROLAR O DADO" BackgroundColor="#4c4c4c" Margin="30"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
