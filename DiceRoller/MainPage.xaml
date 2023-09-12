@@ -10,8 +10,15 @@
             VerticalOptions="Center">
 
             <Label Text="ROLADOR DE DADOS" FontSize="30" HorizontalOptions="Center" Margin="0, 0, 0, 80" VerticalTextAlignment="Center"/>
-            <Label x:Name="numberOutput" Text="0" FontSize="80" HorizontalOptions="Center" />
 
+            <Image
+                x:Name="diceImage"
+                Source="dice_d4.png"
+                SemanticProperties.Description="A dice with the number 1 facing up"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label x:Name="numberOutput" Text="0" FontSize="80" HorizontalOptions="Center" />
 
             <Picker x:Name="seletorQuantidadeLados" HorizontalOptions="Center"
             Title="Quantidade de lados:" FontSize="16">
@@ -25,6 +32,7 @@
                     </x:Array>
                 </Picker.ItemsSource>
             </Picker>
+
             <Button Text="ROLAR O DADO" BackgroundColor="#4c4c4c" Margin="30"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"

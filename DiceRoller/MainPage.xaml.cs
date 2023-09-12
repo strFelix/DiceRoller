@@ -5,7 +5,8 @@ public partial class MainPage : ContentPage
 	public MainPage()
 	{
 		InitializeComponent();
-	}
+        seletorQuantidadeLados.SelectedIndex = 0;
+    }
 
     public class Dice
     {
@@ -30,15 +31,18 @@ public partial class MainPage : ContentPage
     private void OnSortearNumeroClicked(object sender, EventArgs e)
 	{
         //Dice dice = new Dice(7); || Dice dice = new Dice(); Diferentes formas de instanciar a classe 
-        
-        //seleciona valor picker como limitador
-        Dice dice = new Dice((int)seletorQuantidadeLados.SelectedItem); //casting --> altera a forma que o parametro é enxergado (convert)
+        int numSides = (Int32)seletorQuantidadeLados.SelectedItem; //casting --> altera a forma que o parametro é enxergado (convert)
 
+        //seleciona valor picker como limitador
+        Dice dice = new Dice(numSides); 
+        
 		//referenciando o método de sorteio a uma variavel
 		var numeroSorteado = dice.RollDice();
 
 		//Mostrando o numero na tela
 		numberOutput.Text= numeroSorteado.ToString();
+        diceImage.Source = ImageSource.FromFile($"dice_d{numSides}.png");
+      
     }
 }
 
