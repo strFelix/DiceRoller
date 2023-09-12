@@ -28,7 +28,7 @@
             <Button Text="ROLAR O DADO" BackgroundColor="#4c4c4c" Margin="30"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
-                Clicked="SortearNumero" />
+                Clicked="OnSortearNumeroClicked" />
         </VerticalStackLayout>
     </ScrollView>
 
