@@ -28,6 +28,13 @@ public partial class MainPage : ContentPage
         }
     }
 
+    public void OnChangedOptions(object sender, EventArgs e)
+    {
+        int numside = (int)seletorQuantidadeLados.SelectedItem;
+        Image image = new Image();
+        diceImage.Source = ImageSource.FromFile($"dice_d{numside}.png");
+    }
+
     private void OnSortearNumeroClicked(object sender, EventArgs e)
 	{
         //Dice dice = new Dice(7); || Dice dice = new Dice(); Diferentes formas de instanciar a classe 

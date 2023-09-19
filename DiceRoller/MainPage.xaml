@@ -20,7 +20,7 @@
 
             <Label x:Name="numberOutput" Text="0" FontSize="80" HorizontalOptions="Center" />
 
-            <Picker x:Name="seletorQuantidadeLados" HorizontalOptions="Center"
+            <Picker x:Name="seletorQuantidadeLados" HorizontalOptions="Center" SelectedIndexChanged="OnChangedOptions"
             Title="Quantidade de lados:" FontSize="16">
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:Int32}">
